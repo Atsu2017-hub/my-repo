@@ -3,10 +3,14 @@ on:
     workflow_dispatch:
         inputs:
             greeting:
-                type: string
+                type: choice
                 default: Hello
                 required: true
                 description: A cheerful word
+                options:
+                    - info
+                    - warn
+                    - error
 jobs:
     run:
         runs-on: ubuntu-latest
