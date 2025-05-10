@@ -13,3 +13,9 @@
 ## Github CLI
 - gh pr comment 13 --body "Hi from GitHub CLI"
   - プルリクエスト番号13にコメントする。
+- gh pr create [flags]
+  - --base
+    - 指定されていなかったらブランチごとに存在する`gh-merge-base`を対象とする。それも設定されていなかったらデフォルトブランチ。
+    - `git config branch.{current}.gh-merge-base {base}` (config:設定)でgh-merge-baseを設定する。
+  - --head
+    - `<user>:<branch>`で指定
