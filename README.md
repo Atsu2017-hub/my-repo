@@ -27,6 +27,9 @@
     - origin:自分のリモートリポジトリ、upstream:本家のリポジトリ
     - `--base main`はupstream/mainと解釈される。
     - `--head`は自分のフォークブランチ
+## GitHub Actions
+- github.refは仮マージしたブランチ名。これをもとに動作確認。
+  
 ## その他
 - クレデンシャル：ID,ユーザ名、パスワードなど識別情報の総称。認証に用いる。
 
