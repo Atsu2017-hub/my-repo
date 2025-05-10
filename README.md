@@ -17,5 +17,14 @@
   - --base
     - 指定されていなかったらブランチごとに存在する`gh-merge-base`を対象とする。それも設定されていなかったらデフォルトブランチ。
     - `git config branch.{current}.gh-merge-base {base}` (config:設定)でgh-merge-baseを設定する。
+    - `git config --get branch.feature-A.gh-merge-base`で確認可能。
+    - デフォルトでは、フォークリポジトリならそのフォーク元(upstream)、そうでなければそのリポジトリ自身(origin)。--repoを指定するとまた変わる。
   - --head
-    - `<user>:<branch>`で指定
+    - `<user>:<branch>`で指定。もしくはローカルブランチ名(追跡のリモートブランチが元になる)。
+    - デフォルトはカレントブランチ(の追跡先)。
+  - 例：自分のフォークから本家にPRを送るとき
+    - `gh pr create --base main --head my-feature`
+    - origin:自分のリモートリポジトリ、upstream:本家のリポジトリ
+    - `--base main`はupstream/mainと解釈される。
+    - `--head`は自分のフォークブランチ
+
