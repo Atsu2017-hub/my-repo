@@ -8,6 +8,7 @@ jobs:
             ACTOR: ${{github.actor}} 
         steps:
             - run: |
-                date
-                hostname
+                echo "::group::Show enviromental variables"
+                printenv
+                echo "::endgroup::"
               
