@@ -11,5 +11,6 @@ jobs:
                 echo "::add-mask::${ACTOR}"
                 echo "::group::Show enviromental variables"
                 printenv
+                echo "Atsu2017-hub"
                 echo "::endgroup::"
               
