@@ -7,5 +7,5 @@ jobs:
         env: 
             ACTOR: ${{github.actor}} 
         steps:
-            - run: echo "Hello"
+            - run: echo "::debug::Hello"
               
