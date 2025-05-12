@@ -8,6 +8,7 @@ jobs:
             ACTOR: ${{github.actor}} 
         steps:
             - run: |
+                echo "::add-mask::${ACTOR}"
                 echo "::group::Show enviromental variables"
                 printenv
                 echo "::endgroup::"
