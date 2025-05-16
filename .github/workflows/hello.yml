@@ -8,7 +8,7 @@ jobs:
             ACTOR: ${{github.actor}} 
         steps:
             - run: |
-                echo "## Example Title :rocket:" >> "${GitHUB_STEP_SUMMARY}"
-                echo "- first line" >> "${GitHUB_STEP_SUMMARY}"
-                echo "- second line" >> "${GitHUB_STEP_SUMMARY}"
+                echo "## Example Title :rocket:" >> "${GITHUB_STEP_SUMMARY}"
+                echo "- first line" >> "${GITHUB_STEP_SUMMARY}"
+                echo "- second line" >> "${GITHUB_STEP_SUMMARY}"
               
