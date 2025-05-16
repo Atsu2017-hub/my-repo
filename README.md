@@ -43,6 +43,7 @@
        2. あなたのリポジトリのコードを、
        3. 仮想環境の /home/runner/work/<REPO_NAME>/<REPO_NAME> にダウンロード
     4. その後、ビルドやテスト、デプロイなどの処理を実行できる
+- キャッシュのrestore-keysは、keyで完全一致のキャッシュがなかった時、部分一致するキーを採用する。
     
 ## 環境変数、コンテキスト変数
 - github.workspace:ソースコードが展開されるパス。例/home/runner/work/my-repo/my-repo。ジョブごとに作成。ビルド時などに使用。
