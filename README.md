@@ -28,6 +28,7 @@
     - origin:自分のリモートリポジトリ、upstream:本家のリポジトリ
     - `--base main`はupstream/mainと解釈される。
     - `--head`は自分のフォークブランチ
+- gh release upload v1.0.1 <ローカルパス>でアセットにファイル追加。
 ## GitHub Actions
 - github.refは仮マージしたブランチ名。これをもとに動作確認。
 - concurrency:ワークフロー実行制御
