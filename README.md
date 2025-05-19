@@ -69,4 +69,5 @@
 ## その他
 - クレデンシャル：ID,ユーザ名、パスワードなど識別情報の総称。認証に用いる。
 - git tag v1.1.0 <commit-hash>でtagを作成。<commit-hash>を省略すると現在のブランチの最新コミットにtagをつける。
-- tagをpushするためにgit push origin v1.1.0。originは省略不可。
+- tagをpushするためにgit push origin v1.1.0。originは省略不可。ここではtagの履歴がpushされる。
+- branchと同じようにtagの履歴が生成される。なぜなら、tagはブランチ同様に作成時の最新コミット履歴を保存しているためそこからだどれる履歴が表示される。このtagが作られたソースコードの過程をgithubは表示するという意向。
