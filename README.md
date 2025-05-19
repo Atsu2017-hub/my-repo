@@ -70,3 +70,4 @@
 - クレデンシャル：ID,ユーザ名、パスワードなど識別情報の総称。認証に用いる。
 - git tag v1.1.0 <commit-hash>でtagを作成。<commit-hash>を省略すると現在のブランチの最新コミットにtagをつける。
 - tagをpushするためにgit push origin v1.1.0。originは省略不可。
+- 
