@@ -28,6 +28,7 @@
     - origin:自分のリモートリポジトリ、upstream:本家のリポジトリ
     - `--base main`はupstream/mainと解釈される。
     - `--head`は自分のフォークブランチ
+- gh release upload v1.0.1 <ローカルパス>でアセットにファイル追加。
 ## GitHub Actions
 - github.refは仮マージしたブランチ名。これをもとに動作確認。
 - concurrency:ワークフロー実行制御
@@ -71,3 +72,5 @@
 - git tag v1.1.0 <commit-hash>でtagを作成。<commit-hash>を省略すると現在のブランチの最新コミットにtagをつける。
 - tagをpushするためにgit push origin v1.1.0。originは省略不可。
 - 
+- tagをpushするためにgit push origin v1.1.0。originは省略不可。ここではtagの履歴がpushされる。
+- branchと同じようにtagの履歴が生成される。なぜなら、tagはブランチ同様に作成時の最新コミット履歴を保存しているためそこからだどれる履歴が表示される。このtagが作られたソースコードの過程をgithubは表示するという意向。
